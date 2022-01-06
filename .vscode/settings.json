@@ -1,0 +1,7 @@
+{
+  "editor.tabSize": 2,
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#3F708D",
+    "titleBar.inactiveBackground": "#3F708D"
+    }
+}
