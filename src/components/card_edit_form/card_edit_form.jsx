@@ -1,6 +1,6 @@
-import React, { useRef } from "react";
-import Button from "../button/button";
-import styles from "./card_edit_form.module.css";
+import React, { useRef } from 'react';
+import Button from '../button/button';
+import styles from './card_edit_form.module.css';
 
 const CardEditForm = ({ FileInput, card, updateCard, deleteCard }) => {
   const nameRef = useRef();
@@ -88,7 +88,7 @@ const CardEditForm = ({ FileInput, card, updateCard, deleteCard }) => {
         onChange={onChange}
       ></textarea>
       <div className={styles.fileInput}>
-        <FileInput name={fileName} onFileChange={onFileChange} />
+        <FileInput name={name} onFileChange={onFileChange} />
       </div>
       <Button name="Delete" onClick={onSubmit} />
     </form>
