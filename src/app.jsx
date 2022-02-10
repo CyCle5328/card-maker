@@ -1,10 +1,10 @@
-import React from "react";
-import Login from "./components/login/login";
-import styles from "./app.module.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Maker from "./components/maker/maker";
+import React from 'react';
+import Login from './components/login/login';
+import styles from './app.module.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Maker from './components/maker/maker';
 
-function App({ FileInput, authService, cardRepository }) {
+const App = ({ FileInput, authService, cardRepository }) => {
   return (
     <div className={styles.app}>
       <BrowserRouter>
@@ -24,6 +24,6 @@ function App({ FileInput, authService, cardRepository }) {
       </BrowserRouter>
     </div>
   );
-}
+};
 
 export default App;

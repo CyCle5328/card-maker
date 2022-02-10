@@ -1,5 +1,5 @@
-import React, { memo, useRef, useState } from "react";
-import styles from "./image_file_input.module.css";
+import React, { memo, useRef, useState } from 'react';
+import styles from './image_file_input.module.css';
 
 const ImageFileInput = memo(({ imageUploader, name, onFileChange }) => {
   const inputRef = useRef();
@@ -35,10 +35,10 @@ const ImageFileInput = memo(({ imageUploader, name, onFileChange }) => {
           className={`${styles.button} ${name ? styles.pink : styles.grey}`}
           onClick={onButtonClick}
         >
-          {name || "No file"}
+          {name || 'No file'}
         </button>
       )}
-      {loading && <div className={styles.loading}></div>}
+      {loading && <div className={styles.loading} />}
     </div>
   );
 });
